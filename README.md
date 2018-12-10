@@ -10,6 +10,10 @@ There are times where the response model is finalized during the planning / groo
 
 Yes your answer would be to have mocker, that's what this is, but with a hint of more flexibility and an additional feature.
 
+# Install
+
+`npm install api-eazzy`
+
 ## Mock
 
 First module available to you when using the API eazzy, is `mock(req, res);`
