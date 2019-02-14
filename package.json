@@ -4,14 +4,13 @@
   "description": "A Simple mock API server without much dependency",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.18.0",
-    "lodash": "^4.17.11",
     "lodash.get": "^4.4.2",
     "lodash.set": "^4.3.2"
   },
   "scripts": {
-    "start": "node index.js",
-    "start:proxy": "cross-env IS_PROXY=true node index.js"
+    "nodemon": "nodemon",
+    "dev": "npm run nodemon -- ./src/index.js",
+    "test": "cd example && node ./index.js"
   },
   "keywords": [
     "simple",
@@ -22,6 +21,8 @@
   "author": "Santhosh Raju",
   "license": "ISC",
   "devDependencies": {
-    "cross-env": "^5.2.0"
+    "cross-env": "^5.2.0",
+    "eslint": "^5.13.0",
+    "nodemon": "^1.18.10"
   }
 }

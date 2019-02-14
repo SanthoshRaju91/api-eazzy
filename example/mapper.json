@@ -1,0 +1,10 @@
+{
+  "users": {
+    "method": "GET",
+    "path": "users.json"
+  },
+  "posts": {
+    "method": "GET",
+    "path": "posts.json"
+  }
+}
