@@ -12,8 +12,6 @@ Yes your answer would be to have mocker, that's what this is, but with a hint of
 
 ## Mock
 
----
-
 First module available to you when using the API eazzy, is `mock(req, res);`
 
 This functions, expects your project to have two things in your root of the project.
@@ -36,8 +34,6 @@ url is usually the key, in this case it is `users`, so when a request to `users`
 As simple as that you can get.
 
 ## Proxy
-
----
 
 Ever got the irritating `CORS` issue in the UI, while integrating.
 
@@ -63,8 +59,6 @@ And that's it, you make your calls from UI to the proxy server, in that same you
 No more CORS / https headaches
 
 ## Note
-
----
 
 We only provide you the two function `mock(req, res)` & `proxy(req, res)`.
 
