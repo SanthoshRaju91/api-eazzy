@@ -1,6 +1,6 @@
 {
   "name": "api-eazzy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Simple mock API server without much dependency",
   "main": "./src/index.js",
   "dependencies": {
