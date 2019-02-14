@@ -1,13 +1,14 @@
 const set = require("lodash.set");
 const get = require("lodash.get");
-const mapper = require("../mapper");
-
-let maps = {};
+const path = require("path");
+const fs = require("fs");
 
 // Compute a mapper logic to build a tree with the mapper object
 // and have an end property to each property end of the mapper
 // indicating the path end.
-function mapperCompute() {
+function mapperCompute(mapper) {
+  let maps = {};
+
   for (let map in mapper) {
     const splits = map.split("/");
 
@@ -21,7 +22,7 @@ function mapperCompute() {
 }
 
 // Get the mapped config { method: '', path: ''}
-// from the map string / url string.
+// from the map string /url string.
 function getMapped(map) {
   const splits = map.split("/");
 
@@ -47,6 +48,20 @@ function getMapped(map) {
     return get(maps, [map, "end"], {});
   }
 }
+
+const maps = (() => {
+  let maps = fs.readFileSync(
+    path.resolve(`${process.cwd()}/mapper.json`),
+    "utf-8"
+  );
+
+  if (typeof maps === "string") {
+    const parsedMaps = JSON.parse(maps);
+    return mapperCompute(parsedMaps);
+  } else {
+    return {};
+  }
+})();
 
 module.exports = {
   mapperCompute,
