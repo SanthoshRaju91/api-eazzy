@@ -1,0 +1,14 @@
+[
+  {
+    "title": "gun",
+    "shape": "poly",
+    "coords": "69,88,187,120",
+    "accuracy": "94.06"
+  },
+  {
+    "title": "person",
+    "shape": "poly",
+    "accuracy": "99.91",
+    "coords": "59,8,187,178"
+  }
+]
