@@ -1,5 +1,5 @@
 {
-  "name": "api-mocker",
+  "name": "api-eazzy",
   "version": "1.0.0",
   "description": "A Simple mock API server without much dependency",
   "main": "index.js",
