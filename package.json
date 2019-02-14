@@ -19,6 +19,9 @@
     "api",
     "server"
   ],
+  "repository": {
+    "url": "https://github.com/SanthoshRaju91/api-eazzy"
+  },
   "author": "Santhosh Raju",
   "license": "ISC",
   "devDependencies": {
