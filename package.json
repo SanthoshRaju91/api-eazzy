@@ -10,7 +10,8 @@
   "scripts": {
     "nodemon": "nodemon",
     "dev": "npm run nodemon -- ./src/index.js",
-    "test": "cd example && node ./index.js"
+    "test": "cd example && node ./index.js",
+    "release": "./publish.sh"
   },
   "keywords": [
     "simple",
